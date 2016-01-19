@@ -1,0 +1,182 @@
+html {
+  font-size: 12px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  font-size: 1rem; }
+
+body {
+  background: #f7f5f6;
+  font-size: 1rem; }
+
+.divider {
+  margin-top: 0.1rem; }
+
+.divider_block {
+  margin-top: 0.5rem; }
+
+.mHead {
+  height: 3.75rem;
+  width: 100%;
+  background: #424d63;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  line-height: 3.75rem;
+  text-align: center; }
+  .mHead #mBack {
+    padding: 1.25rem 1rem;
+    height: 1.25rem;
+    width: 0.75rem;
+    float: left; }
+  .mHead #mTitle {
+    color: #fff;
+    font-size: 1.6rem; }
+  .mHead #mRight {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: right;
+    color: #fff;
+    font-size: 1.2rem; }
+
+* {
+  overflow: auto; }
+
+.subtitle {
+  color: #727272; }
+
+.title_icon {
+  height: 1.2rem;
+  width: 1rem;
+  margin-right: 0.8rem;
+  display: block;
+  float: left; }
+
+.items {
+  background: #fff;
+  padding: 1rem; }
+
+comm_span span, #send_info span, #recepte_info span, #tip span, #logistics span {
+  height: 1.5rem;
+  line-height: 1.5rem; }
+
+#send_info, #recepte_info {
+  margin-top: 3.75rem; }
+
+#recepte_info {
+  margin-top: 0.1rem; }
+
+#tip {
+  margin-top: 0.5rem; }
+  #tip * {
+    display: block;
+    float: left; }
+
+#price,
+#express {
+  margin-top: 0.1rem; }
+  #price .info,
+  #express .info {
+    width: 26rem;
+    float: left; }
+    #price .info div,
+    #express .info div {
+      padding-top: 0.15rem;
+      padding-bottom: 0.15rem; }
+      #price .info div span,
+      #express .info div span {
+        height: 1.2rem;
+        line-height: 1.2rem; }
+    #price .info #freight,
+    #price .info #total_price,
+    #express .info #freight,
+    #express .info #total_price {
+      color: #fc0000; }
+
+#logistics {
+  margin-top: 0.5rem; }
+  #logistics * {
+    display: block;
+    float: left; }
+  #logistics #state {
+    float: right; }
+
+#company {
+  margin-top: 0.5rem;
+  margin-bottom: 3.8rem; }
+  #company img {
+    height: 5.25rem;
+    width: 5.25rem; }
+  #company .text {
+    margin-left: 0.5rem;
+    display: block;
+    float: left;
+    width: 20rem;
+    height: 5.25rem; }
+    #company .text .name {
+      font-weight: bold;
+      height: 2.75rem;
+      line-height: 2.75rem; }
+  #company .arrow_icon {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    float: right;
+    height: 1.25rem;
+    width: 0.9rem; }
+  #company .certificate {
+    width: 4.5rem;
+    height: 1.4rem;
+    margin-right: 1rem; }
+
+#navButton {
+  width: 100%;
+  height: 3.8rem;
+  position: fixed;
+  bottom: 0; }
+  #navButton .bt0 {
+    display: block;
+    float: left;
+    line-height: 3.8rem;
+    text-align: center;
+    height: 3.8rem;
+    font-size: 1.25rem;
+    width: 33%;
+    color: #fff;
+    background: #605e5f; }
+  #navButton .bt1 {
+    margin-left: 0.5%;
+    margin-right: 0.5%; }
+  #navButton .bt2 {
+    background: orange; }
+
+.mtip-dialog {
+  margin-top: 20rem;
+  width: 28rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.mtip-dialog-content {
+  border-width: 0; }
+
+.mtip-foot {
+  padding-top: 1rem;
+  display: flex; }
+
+.mtip-bt {
+  height: 3rem;
+  width: 50%;
+  color: #fff;
+  font-size: 1.25rem; }
+
+.tip-bt-cancel {
+  background: gray; }
+
+.tip-bt-ok {
+  background: orange; }
+
+/*# sourceMappingURL=order_detail.css.map */

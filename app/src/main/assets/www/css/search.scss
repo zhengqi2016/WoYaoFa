@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import "base.scss";
+* {
+    overflow: auto;
+}
+.mHead {
+    height: 5rem;
+    #mBack {
+        margin-top: 0.625rem;
+    }
+    .keyword {
+        width: 20rem;
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 3rem;
+        //font-size:1rem;
+    }
+    .submit {
+        width: 4.25rem;
+        float: left;
+        color: #000;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 3rem;
+    }
+}
+.result {
+    margin-top: 5rem;
+}
+.result_item {
+    height: 8rem;
+    overflow: hidden;
+    background: #fff;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.1rem;
+    img {
+        height: 8rem;
+        width: 8rem;
+    }
+    .info {
+        float: right;
+        width: 19rem;
+        overflow: hidden;
+        .name {
+            font-size: 1.8rem;
+            width: 19rem;
+            height: 2rem;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .subtitle {
+            color: #5a5a5a;
+        }
+        .lines {
+            height: 3.9rem;
+            margin-top: 0.4rem;
+            overflow: hidden;
+        }
+        .mark {
+            margin-top: 0.5rem;
+            img {
+                height: 0.9rem;
+                width: 0.7rem;
+                margin-right: 0.2rem;
+            }
+            .volume {
+                float: right;
+            }
+        }
+    }
+}

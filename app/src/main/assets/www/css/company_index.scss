@@ -1,0 +1,155 @@
+@charset "utf-8";
+@import "base.scss";
+* {
+    overflow: auto;
+}
+.subtitle {
+    color: #727272;
+}
+.items {
+    background: #fff;
+    padding: 1rem;
+}
+.certificate {
+    width: 4.5rem;
+    height: 1.4rem;
+}
+.name_items {
+    display: block;
+    float: left;
+    overflow: hidden;
+    //scroll:no;
+}
+.arrow {
+    margin-top: 0.27rem;
+    height: 0.9rem;
+    width: 0.7rem;
+    display: block;
+    float: right;
+}
+.margin_right {
+    margin-right: 1.5rem;
+}
+#company {
+    .logo {
+        height: 5.2rem;
+        width: 5.2rem;
+    }
+    #company_content {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        width: 17rem;
+        overflow: hidden;
+        #name {
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+            margin-top: 0.5rem;
+        }
+    }
+    .phone {
+        height: 2rem;
+        width: 2rem;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+        float: right;
+    }
+}
+#address {
+    @extend .divider;
+    #logo {
+        margin-top: 0.2rem;
+        width: 0.9rem;
+        height: 1rem;
+        display: block;
+        float: left;
+    }
+    div {
+        margin-left: 0.5rem;
+        display: block;
+        float: left;
+        width: 18.5rem;
+    }
+    #phone {
+        width: 2rem;
+        height: 2rem;
+        padding: 0.5rem;
+        display: block;
+        float: right;
+    }
+}
+#evaluation {
+    @extend .divider_block;
+}
+.score {
+    float: right;
+    color: #fc8502;
+}
+#lines {
+    @extend .divider;
+    margin-bottom: 4rem;
+    .line_info {
+        font-weight: bold;
+    }
+}
+.price-item {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    span {
+        display: block;
+        float: left;
+    }
+    .price {
+        width: 14rem;
+        color: #fb0304;
+    }
+}
+#myCarousel {
+    margin-top: 3.75rem;
+    //height: 20rem;
+    width: 100%;
+    .myItem {
+        //height: 20rem;
+        //width: 30rem;
+        overflow: initial;
+        .myContent {
+            //height: 20rem;
+            //width: 30rem;
+            img {
+                height: 16.6rem;
+                width: 100%;
+            }
+        }
+    }
+}
+.option {
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    .collect {
+        padding-top: 0.9rem;
+        text-align: center;
+        height: 3.1rem;
+        display: block;
+        float: left;
+        width: 33%;
+        background: #615f60;
+        img {
+            margin-bottom: 0.2rem;
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+    .contact {
+        height: 4rem;
+        display: block;
+        float: left;
+        width: 67%;
+        line-height: 4rem;
+        text-align: center;
+        font-size: 1.5rem;
+        background: #fd8402;
+    }
+}

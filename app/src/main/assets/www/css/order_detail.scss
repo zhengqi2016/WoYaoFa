@@ -1,0 +1,155 @@
+@charset "utf-8";
+@import "base.scss";
+* {
+    overflow: auto;
+}
+.subtitle {
+    color: #727272;
+}
+.title_icon {
+    height: 1.2rem;
+    width: 1rem;
+    margin-right: 0.8rem;
+    display: block;
+    float: left;
+}
+.items {
+    background: #fff;
+    padding: 1rem;
+}
+comm_span {
+    span {
+        height: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+#send_info {
+    @extend comm_span;
+    margin-top: 3.75rem;
+}
+#recepte_info {
+    @extend #send_info;
+    margin-top: 0.1rem;
+}
+#tip {
+    margin-top: 0.5rem;
+    * {
+        display: block;
+        float: left;
+    }
+    @extend comm_span;
+}
+#price,
+#express {
+    margin-top: 0.1rem;
+    .info {
+        width: 26rem;
+        float: left;
+        div {
+            padding-top: 0.15rem;
+            padding-bottom: 0.15rem;
+            span {
+                height: 1.2rem;
+                line-height: 1.2rem;
+            }
+        }
+        #freight,
+        #total_price {
+            color: #fc0000;
+        }
+    }
+}
+#logistics {
+    margin-top: 0.5rem;
+    * {
+        display: block;
+        float: left;
+    }
+    @extend comm_span;
+    #state {
+        float: right;
+    }
+}
+#company {
+    margin-top: 0.5rem;
+    margin-bottom: 3.8rem;
+    img {
+        height: 5.25rem;
+        width: 5.25rem;
+    }
+    .text {
+        margin-left: 0.5rem;
+        display: block;
+        float: left;
+        width: 20rem;
+        height: 5.25rem;
+        .name {
+            font-weight: bold;
+            height: 2.75rem;
+            line-height: 2.75rem;
+        }
+    }
+    .arrow_icon {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: block;
+        float: right;
+        height: 1.25rem;
+        width: 0.9rem;
+    }
+    .certificate {
+        width: 4.5rem;
+        height: 1.4rem;
+        margin-right: 1rem;
+    }
+}
+#navButton {
+    width: 100%;
+    height: 3.8rem;
+    position: fixed;
+    bottom: 0;
+    .bt0 {
+        display: block;
+        float: left;
+        line-height: 3.8rem;
+        text-align: center;
+        height: 3.8rem;
+        font-size: 1.25rem;
+        width: 33%;
+        color: #fff;
+        background: #605e5f;
+    }
+    .bt1 {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+    .bt2 {
+        background: orange;
+    }
+}
+//////////////////////////////提示框css
+.mtip-dialog {
+    margin-top: 20rem;
+    width: 28rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.mtip-dialog-content {
+    border-width: 0;
+}
+.mtip-foot {
+    padding-top: 1rem;
+    display: flex;
+}
+.mtip-bt {
+    height: 3rem;
+    width: 50%;
+    color: #fff;
+    font-size: 1.25rem;
+}
+.tip-bt-cancel {
+    background: gray;
+}
+.tip-bt-ok {
+    background: orange;
+}

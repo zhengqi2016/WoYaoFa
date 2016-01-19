@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/address_book_ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/divider"
+                android:background="@drawable/white_state"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="姓名："
+                android:textColor="#666666"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:id="@+id/address_book_tv_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_state"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/divider"
+                android:background="@drawable/white_state"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:text="电话："
+                android:textColor="#666666"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:id="@+id/address_book_tv_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_state"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_m" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/address_book_iv_default"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/address_book_default"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider"
+        android:background="@drawable/white_state"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="地址："
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/address_book_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_m" />
+
+    </LinearLayout>
+</LinearLayout>

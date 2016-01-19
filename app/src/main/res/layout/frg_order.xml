@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <com.woyaofa.ui.widget.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_h"
+        android:background="@color/head_bg" />
+
+    <LinearLayout
+        android:id="@+id/frg_order_ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/frg_order_tv_pending"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/blue_border_down"
+            android:text="待受理"
+            android:textColor="#2e82fe"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/frg_order_tv_delivery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="待发货"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/frg_order_tv_receipt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="待收货"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/frg_order_tv_evaluate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="待评价"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/frg_order_tv_complete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已完成"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/text_size_m" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/frg_order_srl_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/frg_order_rv_items"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

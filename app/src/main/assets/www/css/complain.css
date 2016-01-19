@@ -1,0 +1,80 @@
+html {
+  font-size: 12px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  font-size: 1rem; }
+
+body {
+  background: #f7f5f6;
+  font-size: 1rem; }
+
+.divider {
+  margin-top: 0.1rem; }
+
+.divider_block, .reason {
+  margin-top: 0.5rem; }
+
+.mHead {
+  height: 3.75rem;
+  width: 100%;
+  background: #424d63;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  line-height: 3.75rem;
+  text-align: center; }
+  .mHead #mBack {
+    padding: 1.25rem 1rem;
+    height: 1.25rem;
+    width: 0.75rem;
+    float: left; }
+  .mHead #mTitle {
+    color: #fff;
+    font-size: 1.6rem; }
+  .mHead #mRight {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: right;
+    color: #fff;
+    font-size: 1.2rem; }
+
+* {
+  overflow: auto; }
+
+.items {
+  background: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.reason * {
+  display: block;
+  float: left; }
+.reason textarea {
+  width: 21rem;
+  height: 19rem; }
+
+#reason textarea {
+  height: 19rem; }
+
+#supplement textarea {
+  height: 10rem; }
+
+#submit {
+  width: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+  background: #ff7c34;
+  text-align: center;
+  height: 4rem;
+  line-height: 4rem;
+  position: fixed;
+  bottom: 0; }
+
+/*# sourceMappingURL=complain.css.map */

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="head_bg">#424d63</color>
+
+    <color name="default_bg">#f7f5f6</color>
+
+    <color name="nav_bar_bg">#ffffff</color>
+    <color name="nav_bar_text_color">#a3a3a3</color>
+    <color name="orange">#ff7c34</color>
+    <color name="orange_dark">#ff8c44</color>
+    <color name="white_s">#999999</color>
+
+
+    <color name="text_content">#808080</color>
+    <color name="text_title">#232323</color>
+    <color name="text_subtitle">#505050</color>
+    <color name="text_emphasize">#101010</color>
+    <color name="red">#fe0103</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+</resources>

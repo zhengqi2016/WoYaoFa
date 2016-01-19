@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mAttr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg">
+
+    <com.woyaofa.ui.widget.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_h"
+        android:background="@color/head_bg"
+        mAttr:isNeedLeft="true"
+        mAttr:text="账户与安全" />
+
+    <com.woyaofa.ui.widget.ItemView
+        android:id="@+id/activity_safe_iv_find_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/white_state"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        mAttr:iconSrc="@mipmap/password"
+        mAttr:paddingLeft="10dp"
+        mAttr:text="修改密码"
+        mAttr:textSize="14sp" />
+
+    <com.woyaofa.ui.widget.ItemView
+        android:id="@+id/activity_safe_iv_change_phone"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="@dimen/divider_block"
+        android:background="@drawable/white_state"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        mAttr:iconSrc="@mipmap/register_phone"
+        mAttr:paddingLeft="10dp"
+        mAttr:text="更换手机"
+        mAttr:textSize="14sp" />
+
+</LinearLayout>

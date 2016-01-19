@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mAttr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <com.woyaofa.ui.widget.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_h"
+        android:background="@color/head_bg"
+        mAttr:isNeedLeft="true"
+        mAttr:text="地图" />
+
+   <WebView
+       android:id="@+id/wv_content"
+       android:layout_width="match_parent"
+       android:scrollbars="none"
+       android:layout_height="match_parent"/>
+
+</LinearLayout>

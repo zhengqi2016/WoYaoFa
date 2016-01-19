@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="index" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>首页</title>
+        <link rel="stylesheet" href="css/swiper-3.2.7.min.css" media="screen" title="no title" charset="utf-8">
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8"> -->
+        <link rel="stylesheet" href="css/index.css" media="screen" title="no title" charset="utf-8">
+    </head>
+
+    <body ng-controller="IndexController">
+        <div id="myCarousel" class="swiper-container">
+            <!-- 轮播（Carousel）项目 -->
+            <div id="carousel" class="swiper-wrapper myContent">
+                <div class="swiper-slide myItem">
+                    <img class="ads" ng-src="{{ads[0].imageUrl}}" alt="{{ads[0].url}}">
+                </div>
+                <div class="swiper-slide myItem">
+                    <img class="ads" ng-src="{{ads[1].imageUrl}}" alt="{{ads[1].url}}">
+                </div>
+                <div class="swiper-slide myItem">
+                    <img class="ads" ng-src="{{ads[2].imageUrl}}" alt="{{ads[2].url}}">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="" id="item">
+            <div class="" id="item_find_logistics">
+                <img src="img/logistic_green.png" alt=""/>
+                <p>
+                    找物流
+                </p>
+            </div>
+            <div class="" id="item_find_express">
+                <img src="img/express.png" alt=""/>
+                <p>
+                    发快递
+                </p>
+            </div>
+        </div>
+        <center id="search">
+            <img src="img/logistics_icon_s.png" id="search_logistics" class="search_logistics" ng-style="{{searchSelectCss}}"/>
+            <img src="img/courier_icon.png" id="search_express" class="search_express" ng-style="{{searchUnSelectCss}}"/>
+        </center>
+        <div class="" id="search_keyword">
+            <img src="img/waybill.png" alt=""/>
+            <input type="text" name="keyword" placeholder="请输入运单号" ng-model="keyword">
+        </div>
+        <button id="submit" type="button" name="">查询</button>
+    </body>
+    <script src="js/base.js" charset="utf-8"></script>
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/swiper-3.2.7.jquery.min.js" charset="utf-8"></script>
+    <!-- <script src="js/bootstrap.min.js" charset="utf-8"></script> -->
+    <script src="js/angular.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+
+</html>

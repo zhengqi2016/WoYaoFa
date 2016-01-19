@@ -1,0 +1,14 @@
+.navigate {
+  height: 3rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  display: none; }
+  .navigate button {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: white; }
+
+/*# sourceMappingURL=map.css.map */

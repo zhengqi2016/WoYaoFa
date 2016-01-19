@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mAttr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <com.woyaofa.ui.widget.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_h"
+        android:background="@color/head_bg"
+        mAttr:isNeedLeft="true"
+        mAttr:text="设置" />
+
+    <LinearLayout
+        android:id="@+id/activity_option_ll_logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white_state"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="头像："
+            android:textColor="@color/text_subtitle"
+            android:textSize="@dimen/text_size_m" />
+
+        <com.lib_common.widgt.RoundImageView
+            android:id="@+id/activity_option_iv_logo"
+            android:layout_width="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/arrow_gray_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_option_ll_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/divider_block"
+        android:background="@drawable/white_state"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="昵称："
+            android:textColor="@color/text_subtitle"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/activity_option_et_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:textCursorDrawable="@null"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_m" />
+
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/arrow_gray_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_option_ll_gender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/divider_block"
+        android:background="@drawable/white_state"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="性别："
+            android:textColor="@color/text_subtitle"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/activity_option_tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_m" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/arrow_gray_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_option_ll_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/divider_block"
+        android:background="@drawable/white_state"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="出生日期："
+            android:textColor="@color/text_subtitle"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/activity_option_tv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_m" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/arrow_gray_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_option_ll_safe"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/divider_block"
+        android:background="@drawable/white_state"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="账户与安全"
+            android:textColor="@color/text_subtitle"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/activity_option_tv_safe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_m" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/arrow_gray_right" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_option_tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/orange_straight_corner_state"
+        android:gravity="center"
+        android:text="退出当前账户"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_b" />
+
+
+</LinearLayout>

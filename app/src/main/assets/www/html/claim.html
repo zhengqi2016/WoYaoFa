@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="claim">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no, width=device-width">
+    <title>申请理赔</title>
+    <link rel="stylesheet" href="../css/claim.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body ng-controller="claimController">
+    <div id="company" class="items">
+        <img src="../img/logistic_gray.png" alt="" class="title_icon" />
+        <span id="name">{{orderBean.line.company.name}}</span>
+        <img id="phone" src="../img/phone.png" alt="" class="phone_icon" />
+    </div>
+    <div id="content" class="items">
+        <div id="tip" class="tip">
+            <span>提示：如有什么问题请先与承运方进行沟通</span>
+        </div>
+        <div id="price" class="price">
+            <span>理赔金额：</span>
+            <span id="price_value">{{orderBean.fee}}</span>
+            <span>元</span>
+        </div>
+        <div class="reason_box">
+            <span>理赔原因：</span>
+            <textarea id="reason" class="reason" name="reason" rows="8" cols="40" placeholder="点击输入" ng-model="reason"></textarea>
+        </div>
+    </div>
+    <div id="info" class="items">
+        <div class="info_item">
+            <span>发货时间：</span>
+            <span>{{orderBean.dueTime|date:'yyyy-MM-dd HH:mm'}}</span>
+        </div>
+        <div class="info_item">
+            <span>运&nbsp;&nbsp;单&nbsp;&nbsp;号：</span>
+            <span>{{orderBean.number}}</span>
+        </div>
+        <div class="info_item">
+            <span>客服电话：</span>
+            <span>{{orderBean.line.company.phone}}</span>
+        </div>
+    </div>
+    <center id="submit" class="">
+        <button type="button" name="button">提交</button>
+    </center>
+    <script src="../js/base.js" charset="utf-8"></script>
+    <script src="../js/jquery.js" charset="utf-8"></script>
+    <script src="../js/angular.js" charset="utf-8"></script>
+    <script src="../js/claim.js" charset="utf-8"></script>
+</body>
+
+</html>

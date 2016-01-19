@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html ng-app="companyIndex">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no, width=device-width">
+    <title>公司主页</title>
+    <link rel="stylesheet" href="../css/sweetalert.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/swiper-3.2.7.min.css" media="screen" title="no title" charset="utf-8">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen" title="no title" charset="utf-8"> -->
+    <link rel="stylesheet" href="../css/company_index.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body ng-controller="companyIndexCtrl">
+    <div id="myCarousel" class="swiper-container">
+        <!-- 轮播（Carousel）项目 -->
+        <div id="carousel" class="swiper-wrapper myItem">
+            <div class="swiper-slide myContent">
+                <img ng-src="{{companyBean.images[0].host}}{{companyBean.images[0].url}}">
+            </div>
+            <div class="swiper-slide myContent">
+                <img ng-src="{{companyBean.images[1].host}}{{companyBean.images[1].url}}">
+            </div>
+            <div class="swiper-slide myContent">
+                <img ng-src="{{companyBean.images[2].host}}{{companyBean.images[2].url}}">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div id="company" class="items">
+        <img id="logo" src="{{companyBean.logo}}" alt="" class="name_items logo" />
+        <div id="company_content" class="name_items">
+            <div id="name" class="">
+                <span ng-bind="companyBean.name"></span>
+            </div>
+            <div class="">
+                <img ng-src="../img/CAIC.png" alt="" class="certificate" ng-show="companyBean.cAIC!=0" />
+                <img ng-src="../img/QC.png" alt="" class="certificate" ng-show="companyBean.qC!=0" />
+            </div>
+        </div>
+        <img id="phone" src="../img/phone.png" alt="" class="name_items phone" />
+    </div>
+    <div id="address" class="items">
+        <img id="logo" src="../img/landmark_line_detail.png" alt="" class="name_items" />
+        <div class="">
+            <span ng-bind="companyBean.province+companyBean.city+companyBean.district+companyBean.address"></span>
+        </div>
+    </div>
+    <div id="evaluation" class="items">
+        <span class="" ng-bind="'评价('+companyBean.commentNum+')'"></span>
+        <img id="logo" src="../img/arrow_gray_right.png" alt="" class="arrow" />
+        <span class="score" ng-bind="(companyBean.commentTotalScore | number : 1)+'分&nbsp;&nbsp;&nbsp;'"></span>
+    </div>
+    <div class="items divider_block">
+        <span class="">主营路线</span>
+    </div>
+    <ul id="lines" class="items">
+        <li class="line" ng-repeat="line in companyBean.lines" ng-click="goto(line)">
+            <div class="line_info">
+                <span ng-bind="line.beginCity+line.beginDistrict+' > '+line.endCity+line.endDistrict"></span>
+            </div>
+            <div>
+                <div class="price-item">
+                    <span class="price" ng-bind="'重货：'+line.minPrice+'-'+line.maxPrice+'元/kg'"></span>
+                    <span class="subtitle">时效：</span>
+                    <span class="margin_right" ng-bind="line.minDay+'-'+line.maxDay+'天'"></span>
+                </div>
+                <div class="price-item">
+                    <span class="price" ng-bind="'轻货：'+line.lightMinPrice+'-'+line.lightMaxPrice+'元/m³'"></span>
+                    <span class="subtitle">成交量：</span>
+                    <span ng-bind="line.volume+'笔'"></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="option">
+        <div id="collect" class="collect">
+            <img src="../img/collection_white.png" alt="" />
+            <div>
+                收藏
+            </div>
+        </div>
+        <div id="option_phone" class="contact">
+            电话联系
+        </div>
+    </div>
+    <center class="mHead">
+        <img id="mBack" src="../img/arrow_white_left.png" alt="" />
+        <span id="mTitle">物流公司主页</span>
+        <span id="mRight">投诉</span>
+    </center>
+    <script src="../js/base.js" charset="utf-8"></script>
+    <script src="../js/jquery.js" charset="utf-8"></script>
+    <script src="../js/sweetalert-dev.js" charset="utf-8"></script>
+    <script src="../js/swiper-3.2.7.jquery.min.js" charset="utf-8"></script>
+    <!-- <script src="../js/bootstrap.min.js" charset="utf-8"></script> -->
+    <script src="../js/angular.js" charset="utf-8"></script>
+    <script src="../js/company_index.js" charset="utf-8"></script>
+</body>
+
+</html>

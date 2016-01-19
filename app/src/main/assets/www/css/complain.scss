@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "base.scss";
+* {
+    overflow: auto;
+}
+.items {
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.reason {
+    @extend .divider_block;
+    * {
+        display: block;
+        float: left;
+    }
+    textarea {
+        width: 21rem;
+        height: 19rem;
+    }
+}
+#reason {
+    textarea {
+        height: 19rem;
+    }
+}
+#supplement {
+    textarea {
+        height: 10rem;
+    }
+}
+#submit {
+    width: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    background: #ff7c34;
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    position: fixed;
+    bottom: 0;
+}

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mAttr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <com.woyaofa.ui.widget.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_h"
+        android:background="@color/head_bg"
+        mAttr:isNeedLeft="true"
+        mAttr:text="评价" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="评价分数："
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_m" />
+
+        <RatingBar
+            android:id="@+id/activity_evaluation_rb_score"
+            style="@android:style/Widget.Holo.Light.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="@dimen/divider_block"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:text="评价内容："
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_m" />
+
+        <EditText
+            android:id="@+id/activity_evaluation_et_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="这一刻的想法..."
+            android:padding="0dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_m" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/activity_evaluation_gv_images"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/divider"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:padding="10dp"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+        android:id="@+id/activity_evaluation_tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/orange_straight_corner_state"
+        android:gravity="center"
+        android:text="发表评论"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_b" />
+</LinearLayout>

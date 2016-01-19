@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="test">
+
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no, width=device-width">
+        <title>测试</title>
+        <link rel="stylesheet" href="../css/sweetalert.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="../css/swiper-3.2.7.min.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="../css/test.css" media="screen" title="no title" charset="utf-8">
+
+    </head>
+
+    <body ng-controller="testCtrl">
+
+        <div class="swiper-container my-container">
+            <div class="swiper-wrapper my-content">
+                <div class="swiper-slide slide-item">
+                    <img src="../img/ionic.png" alt=""/>
+                </div>
+                <div class="swiper-slide slide-item">
+                    <img src="../img/ionic.png" alt=""/>
+                </div>
+                <div class="swiper-slide slide-item">
+                    <img src="../img/ionic.png" alt=""/>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <button id="bt" type="button" class="bt" name="button"></button>
+
+        <div class="test">
+            <span class="c1">afdafdafda</span><span>afda</span> <span class="c2">pddp</span>
+        </div>
+        <div class="test">
+            <span class="c1">afdafd</span><span>af&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="c2">ppdsfdsafdpppp</span>
+        </div>
+
+        <center class="mHead">
+            <img id="mBack" src="../img/arrow_white_left.png" alt=""/>
+            <span id="mTitle">测试</span>
+            <span id="mRight">&nbsp;&nbsp;</span>
+        </center>
+        <script src="../js/base.js" charset="utf-8"></script>
+        <script src="../js/jquery.js" charset="utf-8"></script>
+        <script src="../js/swiper-3.2.7.jquery.min.js" charset="utf-8"></script>
+        <script src="../js/sweetalert-dev.js" charset="utf-8"></script>
+        <script src="../js/angular.js" charset="utf-8"></script>
+        <script src="../js/test.js" charset="utf-8"></script>
+    </body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="companyDetail">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no, width=device-width">
+    <title>公司详情</title>
+    <link rel="stylesheet" href="../css/company_detail.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body ng-controller="companyDetailCtrl">
+    <div id="name" class="items">
+        <span class="subtitle">公司名称：</span>
+        <span ng-bind="companyBean.name"></span>
+    </div>
+    <div id="capital" class="items">
+        <span class="subtitle">注册资本：</span>
+        <span>{{companyBean.registeredCapital}}万</span>
+    </div>
+    <div id="employee" class="items">
+        <span class="subtitle">员工人数：</span>
+        <span>{{companyBean.staffNum}}人</span>
+    </div>
+    <div id="car" class="items">
+        <span class="subtitle">拥有车辆：</span>
+        <span>{{companyBean.carNum}}辆</span>
+    </div>
+    <div id="acreage" class="items">
+        <span class="subtitle">占地面积：</span>
+        <span>{{companyBean.areaCovered}}平方</span>
+    </div>
+    <div id="brief" class="items">
+        <span class="subtitle">公司简介：</span>
+        <span>{{companyBean.summary}}</span>
+    </div>
+    <div id="aptitude" class="items">
+        <div class="subtitle">资质认证：</div>
+        <div>
+            <img ng-show="companyBean.qCImage.url" ng-click="clickImg(companyBean.qCImage.host+companyBean.qCImage.url)" ng-src="{{companyBean.qCImage.host}}{{companyBean.qCImage.url}}" alt="" class="certificate" />
+        </div>
+    </div>
+    <div id="iac" class="items">
+        <div class="subtitle">工商认证：</div>
+        <div>
+            <img ng-click="clickImg($event,image.host+image.url)" ng-src="{{image.host}}{{image.url}}" alt="" class="certificate" ng-repeat="image in companyBean.cAICImages" />
+        </div>
+    </div>
+    <div id="overview" class="overview">
+        <img id="overviewImg" src="" alt="" ng-click="clickImg($event,image.host+image.url)"/>
+    </div>
+    <script src="../js/base.js" charset="utf-8"></script>
+    <script src="../js/jquery.js" charset="utf-8"></script>
+    <script src="../js/angular.js" charset="utf-8"></script>
+    <script src="../js/company_detail.js" charset="utf-8"></script>
+</body>
+
+</html>

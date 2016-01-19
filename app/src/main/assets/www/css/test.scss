@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "base.scss";
+.listview {
+    margin-top: 3.75rem;
+}
+.bt {
+    height: 3rem;
+    width: 100%;
+}
+.my-container {
+    height: 20rem;
+    width: 30rem;
+    //overflow:initial;
+}
+.my-content {
+    overflow: initial;
+    height: 20rem;
+    width: 30rem;
+    background: #ff0;
+}
+.slide-item {
+    height: 20rem;
+    width: 30rem;
+    color: black;
+    background: #f98399;
+    img {
+        height: 20rem;
+        width: 30rem;
+    }
+}
+.test {
+    display: flex;
+    align-items: center;
+    //flex-flow: row wrap;
+    justify-content: stretch;
+    .c1 {
+        background: #f93488;
+        flex:1;
+    }
+    .c2 {
+        background: #003488;
+        flex:1;
+    }
+}

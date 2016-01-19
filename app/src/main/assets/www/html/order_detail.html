@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html ng-app="orderDetail">
+
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no, width=device-width">
+        <title>订单详情</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="../css/order_detail.css" media="screen" title="no title" charset="utf-8">
+    </head>
+
+    <body ng-controller="orderDetailCtrl">
+        <div id="send_info" class="items">
+            <div>
+                <span class="subtitle">发件人：</span>
+                <span id="sender">{{orderBean.beginName}}
+                    {{orderBean.beginPhone}}</span>
+            </div>
+            <div class="secend_box">
+                <span class="subtitle">地&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
+                <span id="sender_address" class="address">{{orderBean.beginAddress}}
+                    <span></div>
+                </div>
+                <div id="recepte_info" class="items">
+                    <div>
+                        <span class="subtitle">收件人：</span>
+                        <span id="recepter">{{orderBean.endName}}
+                            {{orderBean.endPhone}}</span>
+                    </div>
+                    <div class="secend_box">
+                        <span class="subtitle">地&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
+                        <span id="recepter_address" class="address">{{orderBean.endAddress}}</span>
+                    </div>
+                </div>
+                <div id="tip" class="items">
+                    <img src="../img/goods.png" alt="" class="title_icon"/>
+                    <span class="subtitle">货物信息：</span>
+                    <span id="recepter">{{orderBean.detail}}</span>
+                </div>
+                <div id="price" class="items">
+                    <img src="../img/price_yuan.png" alt="" class="title_icon"/>
+                    <div class="info">
+                        <div>
+                            <span class="subtitle">运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费：</span>
+                            <span id="freight">{{orderBean.fee}}</span>
+                            <span>元</span>
+                        </div>
+                        <div>
+                            <span class="subtitle">上门取货：</span>
+                            <span id="visiting_fee">{{orderBean.pickUpFee}}</span>
+                            <span>元</span>
+                        </div>
+                        <div>
+                            <span class="subtitle">上门送货：</span>
+                            <span id="delivery_charge">{{orderBean.sendFee}}</span>
+                            <span>元</span>
+                        </div>
+                        <div>
+                            <span class="subtitle">其&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他：</span>
+                            <span id="delivery_charge">{{orderBean.otherFee}}</span>
+                            <span>元</span>
+                        </div>
+                        <div>
+                            <span class="subtitle">总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计：</span>
+                            <span id="total_price">{{orderBean.fee+orderBean.pickUpFee+orderBean.sendFee+orderBean.otherFee}}</span>
+                            <span>元</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="logistics" class="items">
+                    <img src="../img/waybill_green.png" alt="" class="title_icon"/>
+                    <span class="subtitle">物流跟踪</span>
+                    <span id="state" class="subtitle">{{orderBean.statusStr}}</span>
+                </div>
+                <div id="express" class="items">
+                    <span alt="" class="title_icon"></span>
+                    <div class="info">
+                        <div>
+                            <span class="subtitle">运&nbsp;&nbsp;单&nbsp;&nbsp;号：</span>
+                            <span id="waybill_number">{{orderBean.number}}</span>
+                        </div>
+                        <div ng-show="orderBean.buyTime">
+                            <span class="subtitle">下单时间：</span>
+                            <span id="place_an_order">{{orderBean.buyTime|date:'yyyy-MM-dd HH:mm'}}</span>
+                        </div>
+                        <div ng-show="orderBean.dueTime">
+                            <span class="subtitle">预约时间：</span>
+                            <span id="appointment">{{orderBean.dueTime|date:'yyyy-MM-dd HH:mm'}}</span>
+                        </div>
+                        <div ng-show="orderBean.dealTime">
+                            <span class="subtitle">受理时间：</span>
+                            <span id="dispose">{{orderBean.dealTime|date:'yyyy-MM-dd HH:mm'}}</span>
+                        </div>
+                        <div ng-show="orderBean.sendTime">
+                            <span class="subtitle">发货时间：</span>
+                            <span id="send">{{orderBean.sendTime|date:'yyyy-MM-dd HH:mm'}}</span>
+                        </div>
+                        <div ng-show="orderBean.arrivalTime">
+                            <span class="subtitle">到达时间：</span>
+                            <span id="send">{{orderBean.arrivalTime|date:'yyyy-MM-dd HH:mm'}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="company" class="items">
+                    <img src="{{orderBean.line.company.logo}}" alt="" class="title_icon"/>
+                    <div class="text">
+                        <span id="name" class="name">{{orderBean.line.company.name}}</span>
+                        <div class="">
+                            <img src="../img/CAIC.png" alt="" class="certificate"/>
+                            <img src="../img/QC.png" alt="" class="certificate"/>
+                        </div>
+                    </div>
+                    <img src="../img/arrow_gray_right.png" alt="" class="arrow_icon"/>
+                </div>
+                <div id="navButton" class="navButton">
+                    <span id="bt0" class="bt0">联系电话</span>
+                    <span id="bt1" class="bt0 bt1">申请理赔</span>
+                    <span id="bt2" class="bt0 bt2">确认到货</span>
+                </div>
+                <center class="mHead">
+                    <img id="mBack" src="../img/arrow_white_left.png" alt=""/>
+                    <span id="mTitle">订单详情</span>
+                    <span id="mRight">&nbsp;&nbsp;</span>
+                </center>
+
+                <div class="modal fade" id="myModal">
+                    <div class="mtip-dialog">
+                        <div class="modal-content mtip-dialog-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">操作确认</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p id="content"></p>
+                            </div>
+                            <div class="mtip-foot">
+                                <button id="cancel" type="button" class="mtip-bt tip-bt-cancel" data-dismiss="modal">取消</button>
+                                <button id="ok" type="button" class="mtip-bt tip-bt-ok">确认</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <script src="../js/base.js" charset="utf-8"></script>
+                <script src="../js/jquery.js" charset="utf-8"></script>
+                <script src="../js/bootstrap.min.js" charset="utf-8"></script>
+                <script src="../js/angular.js" charset="utf-8"></script>
+                <script src="../js/order_detail.js" charset="utf-8"></script>
+            </body>
+
+        </html>

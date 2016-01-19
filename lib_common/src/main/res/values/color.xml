@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#d9d9d9</color>
+    <!-- 工具按钮按下颜色 -->
+    <color name="common_tools_button_down">#e65f78</color>
+     <!-- 工具文字颜色 -->
+    <color name="common_tools_text_color">#ff6985</color>
+    <!-- 工具变化提示背景颜色 -->
+    <color name="common_tools_bg">#ffefef</color>
+    <!-- 工具变化提示边缘颜色 -->
+    <color name="common_tools_edge">#ffc5d0</color>
+    
+     <color name="common_halving_line">#c4c4c4</color>
+    <color name="common_header_bg">#ff6986</color>
+    <color name="common_header_font">#ffffff</color>
+    <color name="transparent_background">#50000000</color>
+    <!-- 公共体 标示文字的字体颜色 -->
+    <color name="common_body_mark_color">#868686</color>
+    <!-- 手册工具竖条 -->
+    <color name="n_main_util_line">#fdfdfd</color>
+    <color name="translucent">#40FFFFFF</color>
+ <!-- 半透明 -->
+    <color name="transparence">#00FFFFFF</color>
+ <!-- 透明 -->
+    <color name="umeng_fb_color_btn_normal">#333333</color>
+    <color name="umeng_fb_color_btn_pressed">#1495F7</color>
+</resources>

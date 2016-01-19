@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mAttr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <com.woyaofa.ui.widget.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_h"
+        android:background="@color/head_bg"
+        mAttr:isNeedLeft="true"
+        mAttr:text="添加地址" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/activity_address_add_ll_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/activity_address_add_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/divider_block"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:hint="发货人姓名"
+                android:padding="14dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_m" />
+
+            <EditText
+                android:id="@+id/activity_address_add_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/divider_block"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:hint="联系电话"
+                android:inputType="phone"
+                android:padding="14dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:id="@+id/activity_address_add_tv_pca"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/divider_block"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:hint="省、市、区"
+                android:padding="14dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_size_m" />
+
+            <EditText
+                android:id="@+id/activity_address_add_et_street"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/divider_block"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:hint="街道"
+                android:padding="14dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_m" />
+
+            <EditText
+                android:id="@+id/activity_address_add_et_address"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/divider_block"
+                android:background="@android:color/white"
+                android:gravity="top"
+                android:hint="详细地址"
+                android:maxLength="150"
+                android:minHeight="70dp"
+                android:padding="14dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_m" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/activity_address_add_tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/orange_straight_corner_state"
+        android:gravity="center"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="保存"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_b" />
+</LinearLayout>

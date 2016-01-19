@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="search">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no, width=device-width">
+    <title>查询</title>
+    <link rel="stylesheet" href="../css/search.css" media="screen" title="no title" charset="utf-8">
+
+</head>
+
+<body ng-controller="searchCtrl">
+    <center class="mHead">
+        <img id="mBack" src="../img/arrow_white_left.png" alt="" />
+        <!-- <form class="" action="index.html" method="post"> -->
+        <input type="search" name="name" value="" class="keyword" ng-model="keyword" placeholder="请输入你想搜的公司">
+        <button id="submit" type="submit" class="submit">搜索</button>
+        <!-- </form> -->
+    </center>
+    <div id="result" class="result">
+        <ul>
+            <li class="result_item"  ng-click="goto(company)" ng-repeat="company in companies">
+                <img src="{{company.logo}}" alt="" />
+                <div class="info">
+                    <div class="">
+                        <span class="name">{{company.name}}</span>
+                        <!-- <img src="../img/ionic.png" alt="" /> -->
+                    </div>
+                    <div class="lines">
+                        <span class="subtitle">公司简介：{{company.summary}}</span>
+                    </div>
+                    <div class="mark">
+                        <img src="../img/landmark_line_detail.png" alt="" /><span class="address">{{company.province}}{{company.city}}{{company.district}}{{company.address}}</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="../js/base.js" charset="utf-8"></script>
+    <script src="../js/jquery.js" charset="utf-8"></script>
+    <script src="../js/angular.js" charset="utf-8"></script>
+    <script src="../js/search.js" charset="utf-8"></script>
+</body>
+
+</html>

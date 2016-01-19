@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="logisticsInfo">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no, width=device-width">
+    <title>查看物流</title>
+    <link rel="stylesheet" href="../css/logistics_info.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body ng-controller="logisticsInfoCtrl">
+    <div id="company" class="items">
+        <img ng-src="{{orderBean.line.company.logo}}" alt="" class="title_icon" />
+        <div class="text">
+            <div class="">
+                <span id="name">{{orderBean.line.company.name}}</span>
+            </div>
+            <div class="">
+                <span id="" class="subtitle">状态：</span>
+                <span id="state" class="substance">{{orderBean.statusStr}}</span>
+            </div>
+            <div class="">
+                <span id="" class="subtitle">运单号：</span>
+                <span id="waybill_number" class="substance">{{orderBean.number}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="items divider_block">
+        <span class="subtitle">运输路线</span>
+    </div>
+    <div id="route" class="items divider">
+        {{orderBean.line.beginCity}}{{orderBean.line.beginDistrict}} > {{orderBean.line.endCity}}{{orderBean.line.endDistrict}}
+    </div>
+    <div class="items divider_block">
+        <span class="subtitle">物流跟踪</span>
+    </div>
+    <div id="info" class="items divider">
+        <div class="info_item" ng-show="orderBean.arrivalTime">
+            <img src="../img/wuliu_line2.png" alt="" />
+            <div class="total_tip">
+                <span class="tip substance">确认收货</span>
+                <span class="tip substance">{{orderBean.arrivalTime| date:'yyyy-MM-dd HH:mm:ss' }}</span>
+            </div>
+        </div>
+        <div class="info_item info_item_send" ng-show="orderBean.sendTime">
+            <img src="../img/wuliu_line1.png" alt="" />
+            <div class="total_tip">
+                <span class="substance">已发货</span>
+                <span class=""> {{orderBean.line.beginCity}}{{orderBean.line.beginDistrict}}</span>
+                <span class="tip substance">{{orderBean.sendTime| date:'yyyy-MM-dd HH:mm:ss' }}</span>
+            </div>
+        </div>
+        <div class="info_item" ng-show="orderBean.dealTime">
+            <img src="../img/wuliu_line1.png" alt="" />
+            <div class="total_tip">
+                <span class="tip substance">受理时间</span>
+                <span class="tip substance">{{orderBean.dealTime| date:'yyyy-MM-dd HH:mm:ss' }}</span>
+            </div>
+        </div>
+        <div class="info_item" ng-show="orderBean.buyTime">
+            <img src="../img/wuliu_line1.png" alt="" />
+            <div class="total_tip">
+                <span class="tip substance">下单成功</span>
+                <span class="tip substance">{{orderBean.buyTime| date:'yyyy-MM-dd HH:mm:ss' }}</span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/base.js" charset="utf-8"></script>
+    <script src="../js/jquery.js" charset="utf-8"></script>
+    <script src="../js/angular.js" charset="utf-8"></script>
+    <script src="../js/logistics_info.js" charset="utf-8"></script>
+</body>
+
+</html>

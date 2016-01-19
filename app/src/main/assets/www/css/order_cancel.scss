@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "base.scss";
+* {
+    overflow: auto;
+}
+.title_icon {
+    height: 1.2rem;
+    width: 1rem;
+    margin-right: 0.8rem;
+    display: block;
+    float: left;
+}
+.items {
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+comm_span {
+    span {
+        height: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+#company {
+    @extend .divider_block;
+    height: 1.6rem;
+    .phone_icon {
+        height: 1.6rem;
+        width: 1.6rem;
+        display: block;
+        float: right;
+    }
+    .title_icon {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    #name {
+        display: block;
+        float: left;
+        height: 1.6rem;
+        line-height: 1.6rem;
+    }
+}
+#price{
+    @extend .divider_block;
+    .price_value{
+        color:#fe0000;
+    }
+}
+#reason_box {
+    @extend .divider;
+    * {
+        display: block;
+        float: left;
+    }
+    .reason {
+        height: 14rem;
+    }
+}
+#submit {
+    padding: 0;
+    width: 100%;
+    height: 3rem;
+    background: #ff7c34;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    position: fixed;
+    bottom: 0;
+}

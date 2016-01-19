@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itemAttr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:background="#424d63">
+
+        <com.lib_common.widgt.RoundImageView
+            android:id="@+id/frg_index_iv_logo"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/frg_index_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_index_iv_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/frg_index_tv_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_index_tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_size_s" />
+
+        <LinearLayout
+            android:id="@+id/frg_index_ll_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/option" />
+
+            <TextView
+                android:id="@+id/frg_index_tv_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="设置"
+                android:textSize="@dimen/text_size_b" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.woyaofa.ui.widget.ItemView
+        android:id="@+id/frg_mine_iv_address_book"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/white_state"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        itemAttr:iconSrc="@mipmap/mine_address_book"
+        itemAttr:paddingLeft="10dp"
+        itemAttr:text="地址簿"
+        itemAttr:textSize="14sp" />
+
+    <com.woyaofa.ui.widget.ItemView
+        android:id="@+id/frg_mine_iv_collection"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/white_state"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        itemAttr:iconSrc="@mipmap/mine_collection"
+        itemAttr:paddingLeft="10dp"
+        itemAttr:text="我的收藏"
+        itemAttr:textSize="14sp" />
+
+    <com.woyaofa.ui.widget.ItemView
+        android:id="@+id/frg_mine_iv_orders"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/white_state"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        itemAttr:iconSrc="@mipmap/mine_order_history"
+        itemAttr:paddingLeft="10dp"
+        itemAttr:text="历史订单"
+        itemAttr:textSize="14sp" />
+
+    <com.woyaofa.ui.widget.ItemView
+        android:id="@+id/frg_mine_iv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/white_state"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        itemAttr:iconSrc="@mipmap/mine_feedback"
+        itemAttr:paddingLeft="10dp"
+        itemAttr:text="意见反馈"
+        itemAttr:textSize="14sp" />
+
+    <com.woyaofa.ui.widget.ItemView
+        android:id="@+id/frg_mine_iv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/white_state"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        itemAttr:iconSrc="@mipmap/mine_phone"
+        itemAttr:paddingLeft="10dp"
+        itemAttr:text="联系我们"
+        itemAttr:textSize="14sp" />
+
+</LinearLayout>

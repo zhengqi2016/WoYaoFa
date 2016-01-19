@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="head_h">44dp</dimen>
+
+    <dimen name="nav_bar_icon_h">15dp</dimen>
+    <dimen name="nav_bar_icon_w">15dp</dimen>
+    <dimen name="nav_bar_text_size">13sp</dimen>
+    <dimen name="nav_bar_h">42dp</dimen>
+
+    <dimen name="text_size_s">10sp</dimen>
+    <dimen name="text_size_m">13sp</dimen>
+    <dimen name="text_size_b">16sp</dimen>
+    <dimen name="text_size_l">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="padding_left">14dp</dimen>
+    <dimen name="padding_right">14dp</dimen>
+    <dimen name="padding_top">14dp</dimen>
+    <dimen name="padding_bottom">14dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="buttonH">35dp</dimen>
+    <dimen name="default_radius">5dp</dimen>
+
+    <dimen name="divider">1dp</dimen>
+    <dimen name="divider_block">5dp</dimen>
+
+</resources>

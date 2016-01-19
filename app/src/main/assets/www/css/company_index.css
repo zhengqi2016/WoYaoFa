@@ -1,0 +1,169 @@
+html {
+  font-size: 12px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  font-size: 1rem; }
+
+body {
+  background: #f7f5f6;
+  font-size: 1rem; }
+
+.divider, #address, #lines {
+  margin-top: 0.1rem; }
+
+.divider_block, #evaluation {
+  margin-top: 0.5rem; }
+
+.mHead {
+  height: 3.75rem;
+  width: 100%;
+  background: #424d63;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  line-height: 3.75rem;
+  text-align: center; }
+  .mHead #mBack {
+    padding: 1.25rem 1rem;
+    height: 1.25rem;
+    width: 0.75rem;
+    float: left; }
+  .mHead #mTitle {
+    color: #fff;
+    font-size: 1.6rem; }
+  .mHead #mRight {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: right;
+    color: #fff;
+    font-size: 1.2rem; }
+
+* {
+  overflow: auto; }
+
+.subtitle {
+  color: #727272; }
+
+.items {
+  background: #fff;
+  padding: 1rem; }
+
+.certificate {
+  width: 4.5rem;
+  height: 1.4rem; }
+
+.name_items {
+  display: block;
+  float: left;
+  overflow: hidden; }
+
+.arrow {
+  margin-top: 0.27rem;
+  height: 0.9rem;
+  width: 0.7rem;
+  display: block;
+  float: right; }
+
+.margin_right {
+  margin-right: 1.5rem; }
+
+#company .logo {
+  height: 5.2rem;
+  width: 5.2rem; }
+#company #company_content {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  width: 17rem;
+  overflow: hidden; }
+  #company #company_content #name {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    margin-top: 0.5rem; }
+#company .phone {
+  height: 2rem;
+  width: 2rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  float: right; }
+
+#address #logo {
+  margin-top: 0.2rem;
+  width: 0.9rem;
+  height: 1rem;
+  display: block;
+  float: left; }
+#address div {
+  margin-left: 0.5rem;
+  display: block;
+  float: left;
+  width: 18.5rem; }
+#address #phone {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  display: block;
+  float: right; }
+
+.score {
+  float: right;
+  color: #fc8502; }
+
+#lines {
+  margin-bottom: 4rem; }
+  #lines .line_info {
+    font-weight: bold; }
+
+.price-item {
+  height: 1.5rem;
+  line-height: 1.5rem; }
+  .price-item span {
+    display: block;
+    float: left; }
+  .price-item .price {
+    width: 14rem;
+    color: #fb0304; }
+
+#myCarousel {
+  margin-top: 3.75rem;
+  width: 100%; }
+  #myCarousel .myItem {
+    overflow: initial; }
+    #myCarousel .myItem .myContent img {
+      height: 16.6rem;
+      width: 100%; }
+
+.option {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  bottom: 0;
+  color: #fff; }
+  .option .collect {
+    padding-top: 0.9rem;
+    text-align: center;
+    height: 3.1rem;
+    display: block;
+    float: left;
+    width: 33%;
+    background: #615f60; }
+    .option .collect img {
+      margin-bottom: 0.2rem;
+      height: 1rem;
+      width: 1rem; }
+  .option .contact {
+    height: 4rem;
+    display: block;
+    float: left;
+    width: 67%;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background: #fd8402; }
+
+/*# sourceMappingURL=company_index.css.map */

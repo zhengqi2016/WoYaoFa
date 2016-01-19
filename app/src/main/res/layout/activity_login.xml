@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/scrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#ff0000"-->
+    <!--android:layout_height="match_parent">-->
+
+    <LinearLayout
+        android:id="@+id/activity_login_ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/activity_login_tv_forget_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="280dp"
+            android:gravity="right"
+            android:text="忘记密码？"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_m" />
+
+        <EditText
+            android:id="@+id/activity_login_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/activity_login_tv_forget_pwd"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center_vertical"
+            android:hint="手机号码"
+            android:inputType="number"
+            android:lines="1"
+            android:paddingBottom="2dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/text_size_m" />
+
+        <EditText
+            android:id="@+id/activity_login_et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/activity_login_et_phone"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:paddingBottom="2dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/activity_login_tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonH"
+            android:layout_below="@+id/activity_login_et_pwd"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/orange_rounded_corner_state"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_l" />
+
+        <TextView
+            android:id="@+id/activity_login_tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonH"
+            android:layout_below="@+id/activity_login_tv_login"
+            android:layout_marginBottom="90dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/orange_rounded_corner_state"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_l" />
+    </LinearLayout>
+    <!--</ScrollView>-->
+    <RelativeLayout
+        android:id="@+id/activity_login_rl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="14dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/activity_login_iv_back"
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:background="@mipmap/arrow_white_left" />
+    </RelativeLayout>
+
+</RelativeLayout>

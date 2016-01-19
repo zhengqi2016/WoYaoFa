@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mAttr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <com.woyaofa.ui.widget.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_h"
+        android:background="@color/head_bg"
+        mAttr:isNeedLeft="true"
+        mAttr:text="注册" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="37dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/register_phone" />
+
+        <EditText
+            android:id="@+id/activity_register_et_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="手机号码"
+            android:inputType="number|phone"
+            android:lines="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/activity_register_tv_get_code"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/orange_straight_corner_state"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="获取验证码"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/register_validation" />
+
+        <EditText
+            android:id="@+id/activity_register_et_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="验证码"
+            android:inputType="number"
+            android:lines="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/text_size_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/register_pwd" />
+
+        <EditText
+            android:id="@+id/activity_register_et_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="输入密码(6-18位英文或数字)"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/text_size_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/register_pwd" />
+
+        <EditText
+            android:id="@+id/activity_register_et_confirm_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="再次输入密码"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/text_size_m" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_register_tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="28dp"
+        android:background="@drawable/orange_straight_corner_state"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_b" />
+
+</LinearLayout>

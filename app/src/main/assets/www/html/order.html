@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no, width=device-width">
+    <title>订单</title>
+
+    <link rel="stylesheet" href="../css/ionic.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/order.css" media="screen" title="no title" charset="utf-8">
+
+</head>
+
+<body>
+    <div class="" id="tabs">
+        <div class="tabs">
+            <a class="tab-item" id="tabs_pending">
+            待处理
+        </a>
+            <a class="tab-item" id="tabs_delivery">
+            待发货
+        </a>
+            <a class="tab-item" id="tabs_receipt">
+            待收货
+        </a>
+            <a class="tab-item" id="tabs_evaluate">
+            待评价
+        </a>
+            <a class="tab-item" id="tabs_complete">
+            已完成
+        </a>
+        </div>
+    </div>
+    <div id="wrapper" class="" style="margin-top:0.58rem;">
+        <div id="scroller">
+            <!-- <div id="pullDown" style="height:1rem;width:100%;">
+            <span class="pullDownIcon"></span>
+            <span class="pullDownLabel">下拉刷新...</span>
+        </div> -->
+            <ul class="list">
+                <li class="item">
+                    <div class="company">
+                        <img src="../img/ionic.png" alt="" style="height:1.17rem;width:1.67rem;margin-top:1.25rem;margin-bottom:1.25rem;" />
+                        <span>德邦物流有限公司</span>
+                        <img src="../img/ionic.png" alt="" style="height:0.83rem;width:0.42rem;margin-top:1.42rem;margin-bottom:1.42rem;" />
+                        <span class="state">待处理</span>
+                    </div>
+                    <div class="route">
+                        <span>石家庄市裕华区</span>
+                        <img src="../img/ionic.png" alt="" style="display:block;float:left;height:0.68rem;width:0.5rem;margin-top:1.16rem;margin-bottom:1.16rem;margin-left:1.25rem;margin-right:1.25rem;" />
+                        <span class="state">北京市全境</span>
+                    </div>
+                    <div class="info">
+                        <img src="http://img1d.xgo-img.com.cn/pics/1538/a1537504.jpg" style="height:4.8rem;width:4.8rem;float:left;" alt="" />
+
+                        <div class="" style="float:left;height:4.8rem;width:20rem;margin-left:0.83rem;">
+                            <span class="tip">货物信息:物品易碎，小心运输</span>
+                            <span class="time">下单时间:2015-15-15 15:15</span>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <span class="orderId">订单编号：1234567890222</span>
+                        <span class="unit">元</span>
+                        <span class="price">总价：668.00</span>
+                    </div>
+                    <div class="options">
+                        <button class="delete" type="button" name="delete">删除订单</button>
+                        <button class="cancel" type="button" name="logistics">查看物流</button>
+                        <button class="cancel" type="button" name="cancel">取消订单</button>
+                        <button class="remind" type="button" name="remind">提醒受理</button>
+                        <button class="remind" type="button" name="evaluate">评价</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="company">
+                        <img src="../img/ionic.png" alt="" style="height:1.17rem;width:1.67rem;margin-top:1.25rem;margin-bottom:1.25rem;" />
+                        <span>德邦物流有限公司</span>
+                        <img src="../img/ionic.png" alt="" style="height:0.83rem;width:0.42rem;margin-top:1.42rem;margin-bottom:1.42rem;" />
+                        <span class="state">待处理</span>
+                    </div>
+                    <div class="route">
+                        <span>石家庄市裕华区</span>
+                        <img src="../img/ionic.png" alt="" style="display:block;float:left;height:0.68rem;width:0.5rem;margin-top:1.16rem;margin-bottom:1.16rem;margin-left:1.25rem;margin-right:1.25rem;" />
+                        <span class="state">北京市全境</span>
+                    </div>
+                    <div class="info">
+                        <img src="http://img1d.xgo-img.com.cn/pics/1538/a1537504.jpg" style="height:4.8rem;width:4.8rem;float:left;" alt="" />
+
+                        <div class="" style="float:left;height:4.8rem;width:20rem;margin-left:0.83rem;">
+                            <span class="tip">货物信息:物品易碎，小心运输</span>
+                            <span class="time">下单时间:2015-15-15 15:15</span>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <span class="orderId">订单编号：1234567890222</span>
+                        <span class="unit">元</span>
+                        <span class="price">总价：668.00</span>
+                    </div>
+                    <div class="options">
+                        <button class="delete" type="button" name="delete">删除订单</button>
+                        <button class="cancel" type="button" name="logistics">查看物流</button>
+                        <button class="cancel" type="button" name="cancel">取消订单</button>
+                        <button class="remind" type="button" name="remind">提醒受理</button>
+                        <button class="remind" type="button" name="evaluate">评价</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="company">
+                        <img src="../img/ionic.png" alt="" style="height:1.17rem;width:1.67rem;margin-top:1.25rem;margin-bottom:1.25rem;" />
+                        <span>德邦物流有限公司</span>
+                        <img src="../img/ionic.png" alt="" style="height:0.83rem;width:0.42rem;margin-top:1.42rem;margin-bottom:1.42rem;" />
+                        <span class="state">待处理</span>
+                    </div>
+                    <div class="route">
+                        <span>石家庄市裕华区</span>
+                        <img src="../img/ionic.png" alt="" style="display:block;float:left;height:0.68rem;width:0.5rem;margin-top:1.16rem;margin-bottom:1.16rem;margin-left:1.25rem;margin-right:1.25rem;" />
+                        <span class="state">北京市全境</span>
+                    </div>
+                    <div class="info">
+                        <img src="http://img1d.xgo-img.com.cn/pics/1538/a1537504.jpg" style="height:4.8rem;width:4.8rem;float:left;" alt="" />
+
+                        <div class="" style="float:left;height:4.8rem;width:20rem;margin-left:0.83rem;">
+                            <span class="tip">货物信息:物品易碎，小心运输</span>
+                            <span class="time">下单时间:2015-15-15 15:15</span>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <span class="orderId">订单编号：1234567890222</span>
+                        <span class="unit">元</span>
+                        <span class="price">总价：668.00</span>
+                    </div>
+                    <div class="options">
+                        <button class="delete" type="button" name="delete">删除订单</button>
+                        <button class="cancel" type="button" name="logistics">查看物流</button>
+                        <button class="cancel" type="button" name="cancel">取消订单</button>
+                        <button class="remind" type="button" name="remind">提醒受理</button>
+                        <button class="remind" type="button" name="evaluate">评价</button>
+                    </div>
+                </li>
+            </ul>
+            <!-- <div id="pullUp" style="height:1rem;width:100%;">
+            <span class="pullUpIcon"></span>
+            <span class="pullUpLabel">上拉加载更多...</span>
+        </div> -->
+        </div>
+    </div>
+    <script src="../js/base.js" charset="utf-8"></script>
+    <script src="../js/jquery.js" charset="utf-8"></script>
+    <script src="../js/angular.js" charset="utf-8"></script>
+    <script src="../js/iscroll.js" charset="utf-8"></script>
+    <script src="../js/ionic.bundle.js" charset="utf-8"></script>
+    <script src="../js/order.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_bar_rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nav_bar_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+
+    <RelativeLayout
+        android:id="@+id/nav_bar_rl_tab0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/nav_bar_iv_tab0"
+            android:layout_width="@dimen/nav_bar_icon_w"
+            android:layout_height="@dimen/nav_bar_icon_h"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/index_state" />
+
+        <TextView
+            android:id="@+id/nav_bar_tv_tab0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_bar_iv_tab0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="首页"
+            android:textColor="@color/nav_bar_text_color"
+            android:textSize="@dimen/nav_bar_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav_bar_rl_tab1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/nav_bar_iv_tab1"
+            android:layout_width="@dimen/nav_bar_icon_w"
+            android:layout_height="@dimen/nav_bar_icon_w"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/order_state" />
+
+        <TextView
+            android:id="@+id/nav_bar_tv_tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_bar_iv_tab1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="订单"
+            android:textColor="@color/nav_bar_text_color"
+            android:textSize="@dimen/nav_bar_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav_bar_rl_tab2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/nav_bar_iv_tab2"
+            android:layout_width="@dimen/nav_bar_icon_w"
+            android:layout_height="@dimen/nav_bar_icon_w"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mine_state" />
+
+        <TextView
+            android:id="@+id/nav_bar_tv_tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_bar_iv_tab2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="我的"
+            android:textColor="@color/nav_bar_text_color"
+            android:textSize="@dimen/nav_bar_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

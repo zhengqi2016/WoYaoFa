@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import "base.scss";
+* {
+    overflow: auto;
+}
+.items {
+    padding: 1rem;
+    background: #fff;
+}
+.title_icon {
+    height: 1.25rem;
+    width: 1rem;
+    margin-right: 0.8rem;
+    display: block;
+    float: left;
+}
+.subtitle {
+    height: 1.58rem;
+    line-height: 1.58rem;
+    color: #737373;
+}
+.substance {
+    height: 1.58rem;
+    line-height: 1.58rem;
+}
+#company {
+    margin-top: 0.5rem;
+    img {
+        height: 5.25rem;
+        width: 5.25rem;
+    }
+    .text {
+        margin-left: 0.5rem;
+        display: block;
+        float: left;
+        width: 21rem;
+        height: 5.25rem;
+        #name {
+            font-size: 1.25rem;
+            height: 1.8rem;
+            line-height: 1.8rem;
+        }
+    }
+}
+#route {
+    height: 5.75rem;
+    line-height: 5.75rem;
+    font-size: 1.5rem;
+    //* {
+    //    height: 5.75rem;
+    //    display: block;
+    //    float: left;
+    //}
+    //img {
+    //    padding-top: 1.4rem;
+    //    padding-bottom: 1.4rem;
+    //}
+    //span {
+    //    line-height: 5.75rem;
+    //    font-size: 1.5rem;
+    //}
+}
+.info_item {
+    img {
+        height: 4rem;
+        width: 1rem;
+        display: block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        float: left;
+    }
+    .total_tip {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        height: 2.65rem;
+        width: 23rem;
+        display: block;
+        float: left;
+        overflow: hidden;
+    }
+    .tip {
+        display: block;
+    }
+}
+//.info_item_send {
+//    img {
+//        height: 5.8rem;
+//    }
+//    .total_tip {
+//        height: 4.2rem;
+//    }
+//}

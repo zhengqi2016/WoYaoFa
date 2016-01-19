@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "base.scss";
+* {
+    overflow: auto;
+}
+.subtitle {
+    color: #727272;
+}
+.items {
+    background: #fff;
+    padding: 1rem;
+}
+.certificate {
+    height: 5.4rem;
+    width: 7.5rem;
+    margin: 0.75rem;
+    float: left;
+}
+#iac,
+#aptitude {
+    @extend .divider_block;
+}
+.overview {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    img {
+        height: 60rem;
+        width: 100%;
+    }
+}
